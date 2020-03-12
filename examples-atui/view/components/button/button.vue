@@ -1,39 +1,37 @@
 <template>
   <ATView class="page button js_show">
     <ATView class="page__hd">
-      <h1 class="page__title">Button</h1>
-      <p class="page__desc">按钮，WeUI采用小程序原生的按钮为主体，加入一些间距的样式。</p>
+      <h1 class="page__title">ATButton</h1>
+      <p class="page__desc">按钮</p>
     </ATView>
     <ATButtonArea>
       <ATButton type="primary" >页面主要操作</ATButton>
       <ATButton
         type="primary"
         open-type="getUserInfo"
-        @getuserinfo="getUserInfo" > getUserInfo </ATButton>
+        @getuserinfo="getUserInfo"> getUserInfo </ATButton>
       <ATButton
         :loading="true"
         type="primary">Loading</ATButton>
       <ATButton
         :disabled="true"
         type="primary">禁止点击</ATButton>
-      <ATButton >页面次要操作</ATButton>
-      <ATButton type="warn">警告类操作</ATButton>
-      <ATButton
-        :loading="true"
-        type="warn">警告类操作</ATButton>
-      <ATButton
-        :disabled="true"
-        type="warn">警告类操作</ATButton>
     </ATButtonArea>
     <ATButtonArea direction="horizontal">
+      <ATButton size="mini" >btn</ATButton>
       <ATButton
         size="mini"
         type="primary">btn</ATButton>
-      <ATButton size="mini" >btn</ATButton>
       <ATButton
         size="mini"
         type="warn">btn</ATButton>
     </ATButtonArea>
+
+    <ATView class="page__bottom_tips">
+      <p>ATButton 应用场景: 用户操作交互</p>
+      <p>展现形式: 填充有明显导向用户操作的文案</p>
+      <p>展现方式: 任何位置</p>
+    </ATView>
   </ATView>
 </template>
 

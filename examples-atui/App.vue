@@ -4,7 +4,7 @@
     class="container">
     <router-link
       :to="routes.index"
-      class="homeIcon">BACK HOME</router-link>
+      class="homeIcon">Back</router-link>
     <router-view/>
   </ATView>
 </template>
@@ -26,7 +26,13 @@ export default Vue.extend({
 @import "./weui/weui.less";
 
 .homeIcon{
-    position: absolute;
+    position: fixed;
     z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid gray;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 </style>

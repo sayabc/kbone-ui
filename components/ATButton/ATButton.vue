@@ -30,7 +30,6 @@
     @launchapp="bindlaunchapp"
   >
     <slot/>
-    小程序里才展示这部分
   </wx-button>
   <button
     v-else
@@ -41,7 +40,6 @@
     <i
       v-if="loading"
       class="weui-loading"/><slot/>
-    这里是web才展示
   </button>
 </template>
 

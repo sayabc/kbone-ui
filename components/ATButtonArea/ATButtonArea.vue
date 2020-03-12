@@ -1,6 +1,6 @@
 <template>
   <div :class="classObject">
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -8,11 +8,13 @@
 import {ismp} from '@utils/util'
 
 export default {
-    name: 'KButtonArea',
+    name: 'ATButtonArea',
     props: {
         direction: {
             type: String,
-            default() { return 'vertical' }
+            default() {
+                return 'vertical'
+            }
         }
     },
     data() {
@@ -24,10 +26,9 @@ export default {
         classObject() {
             return {
                 'weui-btn-area': true,
-                'weui-btn-area_inline': this.direction === 'horizontal',
+                'weui-btn-area_inline': this.direction === 'horizontal'
             }
         }
     }
 }
 </script>
-

@@ -3,13 +3,17 @@ import ATView from '../components/ATView'
 import ATButton from '../components/ATButton'
 import {ATFlex, ATFlexItem} from '../components/ATFlex'
 import ATButtonArea from '../components/ATButtonArea'
+import ATToast from '../components/ATToast'
+import ATDialog from '../components/ATDialog'
 
 const components = [
     ATView,
     ATButton,
     ATFlex,
     ATFlexItem,
-    ATButtonArea
+    ATButtonArea,
+    ATToast,
+    ATDialog
 ]
 
 const install = function(Vue, opts = {}) {
@@ -38,5 +42,7 @@ export default {
     ATButton,
     ATFlex,
     ATFlexItem,
-    ATButtonArea
+    ATButtonArea,
+    ATToast,
+    ATDialog
 }

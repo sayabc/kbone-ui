@@ -10,8 +10,8 @@ const Flex = () => import(/* webpackChunkName: "Flex" */ '@/view/components/flex
 // const Form = () => import(/* webpackChunkName: "Form" */ '@/view/components/form/form.vue')
 // const Slider = () => import(/* webpackChunkName: "Slider" */ '@/view/components/form/slider.vue')
 // const ActionSheet = () => import(/* webpackChunkName: "ActionSheet" */ '@/view/components/actionsheet/actionsheet.vue')
-// const Dialog = () => import(/* webpackChunkName: "Dialog" */ '@/view/components/dialog/dialog.vue')
-// const Toast = () => import(/* webpackChunkName: "Toast" */ '@/view/components/toast/toast.vue')
+const Dialog = () => import(/* webpackChunkName: "Dialog" */ '@/view/components/dialog/dialog.vue')
+const Toast = () => import(/* webpackChunkName: "Toast" */ '@/view/components/toast/toast.vue')
 // const Progress = () => import(/* webpackChunkName: "progress" */ '@/view/components/progress/progress.vue')
 // const Toptips = () => import(/* webpackChunkName: "Topstips" */ '@/view/components/toptips/toptips.vue')
 // const Picker = () => import(/* webpackChunkName: "Picker" */ '@/view/components/picker/picker.vue')
@@ -32,12 +32,12 @@ export default new Router({
         },
         {
             path: routeConfig.pages.button,
-            name: 'Button',
+            name: 'ATButton',
             component: Button
         },
         {
             path: routeConfig.pages.flex,
-            name: 'Flex',
+            name: 'ATFlex',
             component: Flex
         },
         // {
@@ -60,16 +60,16 @@ export default new Router({
         //     name: 'ActionSheet',
         //     component: ActionSheet
         // },
-        // {
-        //     path: routeConfig.pages.dialog,
-        //     name: 'Dialog',
-        //     component: Dialog
-        // },
-        // {
-        //     path: routeConfig.pages.toast,
-        //     name: 'Toast',
-        //     component: Toast
-        // },
+        {
+            path: routeConfig.pages.dialog,
+            name: 'ATDialog',
+            component: Dialog
+        },
+        {
+            path: routeConfig.pages.toast,
+            name: 'ATToast',
+            component: Toast
+        },
         // {
         //     path: routeConfig.pages.progress,
         //     name: 'Progress',

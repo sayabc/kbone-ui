@@ -1,26 +1,30 @@
 <template>
-  <KView class="page dialog js_show">
-    <KView class="page__hd">
-      <h1 class="page__title">Dialog</h1>
-      <p class="page__desc">Dialog 显示</p>
-    </KView>
-    <KView class="page__bd page__bd_spacing">
-      <KButton @click="openDialog">Dialog with one button</KButton>
-      <KButton @click="openDualDialog">Dialog with two buttons</KButton>
-    </KView>
-    <KDialog
+  <ATView class="page dialog js_show">
+    <ATView class="page__hd">
+      <h1 class="page__title">ATDialog</h1>
+      <p class="page__desc">弹窗提示</p>
+    </ATView>
+    <ATView class="page__bd page__bd_spacing">
+      <ATButton @click="openDialog">一个按钮</ATButton>
+      <ATButton @click="openDualDialog">两个按钮</ATButton>
+    </ATView>
+    <ATDialog
       v-model="diaShow"
       :buttons="diaBtn"
-      title="零度的田"
-      desc="弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内"
+      title="Dialog Title here"
+      desc="提示信息可以单行、多行，控制住"
     />
-    <KDialog
+    <ATDialog
       v-model="dualShow"
       :buttons="dualBtn"
-      title="villainhr"
-      desc="弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内"
+      title="Dialog Title here"
+      desc="提示信息可以单行、多行，控制住"
     />
-  </KView>
+    <ATView class="page__bottom_tips">
+      <p>ATDialog 应用场景: 操作需要用户确认或者取消、需要用户输入信息</p>
+      <p>展现形式: 标题+内容+按钮(确认)、标题+内容+按钮(主操作+辅操作)、内容+按钮(知道了)、标题+内容+按钮(知道了)；内容可单行可多行，尽量简短</p>
+    </ATView>
+  </ATView>
 </template>
 
 <script>

@@ -1,27 +1,34 @@
 <template>
-  <KView class="page toast js_show">
-    <KView class="page__hd">
-      <h1 class="page__title">Toast</h1>
+  <ATView class="page toast js_show">
+    <ATView class="page__hd">
+      <h1 class="page__title">ATToast</h1>
       <p class="page__desc">弹出式提示</p>
-    </KView>
-    <KView class="page__bd page__bd_spacing">
-      <KButton @click="successShow">
+    </ATView>
+    <ATView class="page__bd page__bd_spacing">
+      <ATButton @click="successShow">
         成功提示
-      </KButton>
-      <KButton @click="loadingShow">
+      </ATButton>
+      <ATButton @click="loadingShow">
         加载中提示
-      </KButton>
-    </KView>
-    <KToast
+      </ATButton>
+    </ATView>
+    <ATToast
       :duration="1000"
       v-model="successTips"
       type="success"
-    >已完成</KToast>
-    <KToast
+    >已完成</ATToast>
+    <ATToast
       v-model="loadingToast"
       type="loading"
-    >加载中提示</KToast>
-  </KView>
+    >加载中提示</ATToast>
+
+    <ATView class="page__bottom_tips">
+      <p>ATToast 应用场景: success  error</p>
+      <p>展现形式: 标题+提示文字、提示文字、提示图片+提示文字</p>
+      <p>展现方式: 上、中、下，动画可以自定义</p>
+    </ATView>
+
+  </ATView>
 </template>
 
 <script>

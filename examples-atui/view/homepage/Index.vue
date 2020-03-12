@@ -4,7 +4,8 @@
       <h1 class="page__title">
         ATHM-UI
       </h1>
-      <p class="page__desc">ATHM-UI 是一套同微信原生视觉体验一致的基础样式库，同时适用于 Web 端和小程序。</p>
+      <p class="page__desc">一处代码，同时用于 Web 端和 微信 小程序。</p>
+      <p class="page__desc">基于we-ui，还原微信原生体验，借鉴kbone-ui设计思路，定制化UI库。</p>
     </ATView>
     <ATView class="page__bd page__bd_spacing">
       <ul>
@@ -31,7 +32,7 @@
                 @click="jump2Url(wrapItems.link)"
               >
                 <ATView class="weui-cell__bd">
-                  <p>{{ wrapItems.text }}</p>
+                  <p>{{ wrapItems.link }}</p>
                 </ATView>
                 <ATView class="weui-cell__ft"/>
               </ATView>
@@ -54,12 +55,12 @@ export default Vue.extend({
             routes,
             list: [
                 {
-                    title: '表单',
+                    title: 'Actions',
                     img: require('../../images/icon_nav_form.png'),
                     active: false,
                     items: [
                         {
-                            text: 'Button',
+                            text: 'ATButton',
                             link: '/button'
                         },
                         // {
@@ -72,25 +73,25 @@ export default Vue.extend({
                         // }
                     ]
                 },
-                // {
-                //     title: '基础组件',
-                //     img: require('../../images/icon_nav_layout.png'),
-                //     active: false,
-                //     items: [
-                //         {
-                //             text: 'Flex',
-                //             link: '/flex'
-                //         },
-                //         {
-                //             text: 'Progress',
-                //             link: '/progress'
-                //         },
-                //         {
-                //             text: 'Slider',
-                //             link: '/slider'
-                //         },
-                //     ]
-                // },
+                {
+                    title: 'Layout',
+                    img: require('../../images/icon_nav_layout.png'),
+                    active: false,
+                    items: [
+                        {
+                            text: 'ATFlex',
+                            link: '/flex'
+                        },
+                        // {
+                        //     text: 'Progress',
+                        //     link: '/progress'
+                        // },
+                        // {
+                        //     text: 'Slider',
+                        //     link: '/slider'
+                        // },
+                    ]
+                },
                 // {
                 //     title: '视图组件',
                 //     img: require('../../images/icon_nav_z-index.png'),
@@ -114,29 +115,29 @@ export default Vue.extend({
                 //         },
                 //     ]
                 // },
-                // {
-                //     title: '操作反馈',
-                //     img: require('../../images/icon_nav_feedback.png'),
-                //     active: false,
-                //     items: [
-                //         {
-                //             text: 'Actionsheet',
-                //             link: '/actionsheet'
-                //         },
-                //         {
-                //             text: 'Toast',
-                //             link: '/toast'
-                //         },
-                //         {
-                //             text: 'Dialog',
-                //             link: '/dialog'
-                //         },
-                //         {
-                //             text: 'Toptips',
-                //             link: '/toptips'
-                //         }
-                //     ]
-                // }
+                {
+                    title: 'Show',
+                    img: require('../../images/icon_nav_feedback.png'),
+                    active: false,
+                    items: [
+                        // {
+                        //     text: 'Actionsheet',
+                        //     link: '/actionsheet'
+                        // },
+                        {
+                            text: 'ATToast',
+                            link: '/toast'
+                        },
+                        {
+                            text: 'ATDialog',
+                            link: '/dialog'
+                        },
+                        // {
+                        //     text: 'Toptips',
+                        //     link: '/toptips'
+                        // }
+                    ]
+                }
             ]
         }
     },
