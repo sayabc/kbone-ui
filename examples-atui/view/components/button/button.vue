@@ -41,7 +41,7 @@ export default {
         getUserInfo(e) {
             console.log(e)
         }
-    }
+    },
 }
 
 

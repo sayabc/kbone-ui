@@ -4,14 +4,14 @@ import routeConfig from './routeConfig'
 
 // eslint-disable-next-line
 const Home = () => import(/* webpackChunkName: "Home" */ "@/view/homepage/Index.vue")
-const Button = () => import(/* webpackChunkName: "Button" */ '@/view/components/button/button.vue')
-const Flex = () => import(/* webpackChunkName: "Flex" */ '@/view/components/flex/flex.vue')
+const ATButton = () => import(/* webpackChunkName: "Button" */ '@/view/components/button/button.vue')
+const ATFlex = () => import(/* webpackChunkName: "Flex" */ '@/view/components/flex/flex.vue')
 // const ScrollView = () => import(/* webpackChunkName: "Flex" */ '@/view/components/scrollview/scrollview.vue')
 // const Form = () => import(/* webpackChunkName: "Form" */ '@/view/components/form/form.vue')
 // const Slider = () => import(/* webpackChunkName: "Slider" */ '@/view/components/form/slider.vue')
 // const ActionSheet = () => import(/* webpackChunkName: "ActionSheet" */ '@/view/components/actionsheet/actionsheet.vue')
-const Dialog = () => import(/* webpackChunkName: "Dialog" */ '@/view/components/dialog/dialog.vue')
-const Toast = () => import(/* webpackChunkName: "Toast" */ '@/view/components/toast/toast.vue')
+const ATDialog = () => import(/* webpackChunkName: "Dialog" */ '@/view/components/dialog/dialog.vue')
+const ATToast = () => import(/* webpackChunkName: "Toast" */ '@/view/components/toast/toast.vue')
 // const Progress = () => import(/* webpackChunkName: "progress" */ '@/view/components/progress/progress.vue')
 // const Toptips = () => import(/* webpackChunkName: "Topstips" */ '@/view/components/toptips/toptips.vue')
 // const Picker = () => import(/* webpackChunkName: "Picker" */ '@/view/components/picker/picker.vue')
@@ -33,12 +33,12 @@ export default new Router({
         {
             path: routeConfig.pages.button,
             name: 'ATButton',
-            component: Button
+            component: ATButton
         },
         {
             path: routeConfig.pages.flex,
             name: 'ATFlex',
-            component: Flex
+            component: ATFlex
         },
         // {
         //     path: routeConfig.pages.scrollview,
@@ -63,12 +63,12 @@ export default new Router({
         {
             path: routeConfig.pages.dialog,
             name: 'ATDialog',
-            component: Dialog
+            component: ATDialog
         },
         {
             path: routeConfig.pages.toast,
             name: 'ATToast',
-            component: Toast
+            component: ATToast
         },
         // {
         //     path: routeConfig.pages.progress,

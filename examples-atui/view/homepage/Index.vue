@@ -32,7 +32,7 @@
                 @click="jump2Url(wrapItems.link)"
               >
                 <ATView class="weui-cell__bd">
-                  <p>{{ wrapItems.link }}</p>
+                  <p>{{ wrapItems.text }}</p>
                 </ATView>
                 <ATView class="weui-cell__ft"/>
               </ATView>

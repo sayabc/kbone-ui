@@ -1,5 +1,6 @@
 <template>
   <ATView class="page dialog js_show">
+    ddd
     <ATView class="page__hd">
       <h1 class="page__title">ATDialog</h1>
       <p class="page__desc">弹窗提示</p>
@@ -67,6 +68,6 @@ export default {
         openDualDialog() {
             this.dualShow = true
         }
-    }
+    },
 }
 </script>
