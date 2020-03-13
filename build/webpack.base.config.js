@@ -5,12 +5,12 @@ const eslintFriendlyFormatter = require('eslint-friendly-formatter')
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: path.resolve(__dirname, '../examples/main.js'),
+    app: path.resolve(__dirname, '../examples-atui/main.js'),
   },
   output: {
     path: path.resolve(__dirname, '../dist/web'),
     filename: '[name].js',
-    publicPath: '/',
+    publicPath: './',
   },
   module: {
     rules: [
@@ -19,7 +19,7 @@ module.exports = {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
-        include: [path.resolve(__dirname, '../examples')],
+        include: [path.resolve(__dirname, '../examples-atui/')],
         options: {
           formatter: eslintFriendlyFormatter,
           emitWarning: true,
@@ -43,7 +43,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [path.resolve(__dirname, '../examples')],
+        include: [path.resolve(__dirname, '../examples-atui')],
       },
       // img res
       {
@@ -78,7 +78,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, '../examples'),
+      '@': path.resolve(__dirname, '../examples-atui'),
       ...externalConf.alias
     },
   },

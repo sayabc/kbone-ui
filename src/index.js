@@ -1,7 +1,7 @@
 import {ismp} from './utils/util'
-import KView from '../packages/KView/'
-import KButton from '../packages/KButton/'
-import KButtonArea from '../packages/KButtonArea/'
+import KView from '../packages/KView'
+import KButton from '../packages/KButton'
+import KButtonArea from '../packages/KButtonArea'
 import {
     KFlex,
     KFlexItem
@@ -18,20 +18,20 @@ import {
     KInput,
     KSlider,
 } from '../packages/KForm'
-import KActionSheet from '../packages/KActionSheet/'
-import KDialog from '../packages/KDialog/'
-import KToast from '../packages/KToast/'
-import KProgress from '../packages/KProgress/'
-import KToptips from '../packages/KToptips/'
-import KIcon from '../packages/KIcon/'
+import KActionSheet from '../packages/KActionSheet'
+import KDialog from '../packages/KDialog'
+import KToast from '../packages/KToast'
+import KProgress from '../packages/KProgress'
+import KToptips from '../packages/KToptips'
+import KIcon from '../packages/KIcon'
 import {
     KPickerView,
     KPickerViewColumn,
-} from '../packages/KPicker/'
+} from '../packages/KPicker'
 import {
     KSwiper,
     KSwiperItem
-} from '../packages/KSwiper/'
+} from '../packages/KSwiper'
 import {KMovableView, KMovableArea} from '../packages/KMovable'
 
 const components = [

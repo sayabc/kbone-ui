@@ -16,7 +16,7 @@ module.exports = {
   mode: 'production',
   entry: {
     // js 入口
-    home: path.resolve(__dirname, '../examples/mp/main.mp.js'),
+    home: path.resolve(__dirname, '../examples-atui/mp/main.mp.js'),
   },
   output: {
     path: path.resolve(__dirname, '../dist/mp/common'), // 放到小程序代码目录中的 common 目录下
@@ -146,7 +146,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, '../examples'),
+      '@': path.resolve(__dirname, '../examples-atui'),
       "@utils": path.resolve(__dirname,'../src/utils')
     },
   },

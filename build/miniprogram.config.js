@@ -30,7 +30,7 @@ module.exports = {
     app: {
         backgroundTextStyle: 'dark',
         navigationBarTextStyle: 'white',
-        navigationBarTitleText: 'kbone-ui',
+        navigationBarTitleText: 'ATHM-UI',
     },
     // 全局配置
     global: {
@@ -42,7 +42,7 @@ module.exports = {
     pages: {},
     // 项目配置，会被合并到 project.config.json
     projectConfig: {
-        projectname: 'kbone-ui',
+        projectname: 'ATHM-UI',
         appid: '',
         libVersion: '2.10.0'
     },
